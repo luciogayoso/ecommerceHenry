@@ -1,0 +1,87 @@
+.Container{
+    max-width: 700px;
+    margin: 0 auto;
+    
+}
+.h3{
+    margin-left: 30%;
+    text-align: center;
+
+}
+.button{
+  margin-top: 30px;
+  padding: 15px 15px;
+  font-size: 15px;
+  font-style: initial;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  width: 400px;
+  pointer-events: auto;
+  margin-left: 25%;
+  background: linear-gradient(45deg, #1292FF, #716BF9)!important;
+  border: none;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 
+              0 6px 30px 5px rgba(0,0,0,.12), 
+              0 8px 10px -7px rgba(0,0,0,.2);
+
+  
+}
+.boton{
+    margin-left: 20%;
+    margin: 15px;
+    font-size: 15px;
+    height: 40px;
+    width: 200px;
+    border: none;
+    pointer-events: auto;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #377ED1, #03a9f4)!important; 
+    box-shadow: 
+    0 2px 2px 0 rgba(0,0,0,.14), 
+    0 3px 1px -2px rgba(0,0,0,.12), 
+    0 1px 5px 0 rgba(0,0,0,.2); 
+}
+.boton:hover{
+    background: linear-gradient(1deg, #03a9f4,#377ED1)!important;
+
+}
+.input{
+    margin-left: 5%;
+    margin-top: 7px;
+}
+.botonlink{
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: lightskyblue;
+    position: absolute;
+    top: 30px;
+    left: -25px;
+ 
+}
+.card {
+    padding: 25px;
+    width: 70%;
+    height: auto;
+    display: grid;
+    height: auto;
+    display: grid;
+    gap: 0px 0px;
+    box-shadow: 
+            0 2px 2px 0 rgba(0,0,0,.14), 
+            0 3px 1px -2px rgba(0,0,0,.12), 
+            0 1px 5px 0 rgba(0,0,0,.2);
+
+  }
+.thead{
+    background: url('../NavBar/header.jpg') !important;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

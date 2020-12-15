@@ -1,0 +1,17 @@
+.carruselFav{
+    background:  linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1)
+      ) !important;
+    width: 80%;
+    height: 400px;
+    border-radius: 10px;
+}
+.containerFav{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.carrusel{
+    padding: 30px;
+}

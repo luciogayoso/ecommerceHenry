@@ -1,0 +1,23 @@
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+    display: grid;
+    grid-row: auto;
+    grid-template-columns: .7fr 3fr;
+    grid-template-areas:
+      "menuCategories productos"
+  }
+
+  .productos { 
+    display: flex;
+    grid-area: productos;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    }
+
+  .pagination{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }

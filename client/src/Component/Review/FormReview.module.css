@@ -1,0 +1,25 @@
+
+
+.star{
+    font-size: 20px;
+    color:#4280ff;
+}
+.starContainer{
+    display: flex;
+    font-size: 20px;
+    flex-direction: row;
+}
+.textDescription{
+    height: 15vh;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 
+                0 3px 1px -2px rgba(0,0,0,.12), 
+                0 1px 5px 0 rgba(0,0,0,.2);
+    border: none;
+    width: 100%;
+    display: flex;
+    resize:none;
+    align-items: flex-start
+}
+.Container{
+    width: 100%;
+}

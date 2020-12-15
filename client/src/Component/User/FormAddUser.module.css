@@ -1,0 +1,43 @@
+.Container{
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 350px;
+ 
+ }
+ .boton{  
+     margin: 15px;
+     margin-top:30px ;
+     margin-left: 140px;
+     font-size: 17px;
+     width: 300px;
+     border: none;
+     pointer-events: auto;
+     text-transform: uppercase;
+     /* background: #03a9f4; */
+     background: linear-gradient(45deg, #377ED1, #03a9f4)!important; 
+     /* background-image: url("../NavBar/header.jpg"); */
+ }
+ .Card{
+     margin-top: 70px;
+    
+ }
+ .label{
+     width: 50px;
+     background-color: #716BF9;
+ }
+ .card {
+    padding: 25px;
+    margin-left: 100px;
+    width: 80%;
+    height: auto;
+    display: grid;
+    height: auto;
+    display: grid;
+    gap: 0px 0px;
+    border-radius: .625rem .625rem 0 0;
+    box-shadow: 
+            0 2px 2px 0 rgba(0,0,0,.14), 
+            0 3px 1px -2px rgba(0,0,0,.12), 
+            0 1px 5px 0 rgba(0,0,0,.2);
+ 
+  }

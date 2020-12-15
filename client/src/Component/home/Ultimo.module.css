@@ -1,0 +1,33 @@
+.card{
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 
+    0 6px 30px 5px rgba(0,0,0,.12), 
+    0 8px 10px -7px rgba(0,0,0,.2);
+}
+.contImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    padding: 10px;
+    max-width:180px; 
+    max-height:180px; 
+    width: auto; 
+    height: auto;
+}
+.link{
+    text-align: center;
+    color: #a7a7a7 !important;
+}
+.nuevo{
+    position: absolute;
+    left: -30px;
+    top: 30px;
+    padding:  5px;
+    border-radius: 5px;
+    color: white;
+    background-color: lightcoral;
+
+}

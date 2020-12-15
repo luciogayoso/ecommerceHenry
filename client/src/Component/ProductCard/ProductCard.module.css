@@ -1,0 +1,137 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+@font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+  }
+  .card{
+    display: grid;
+    text-align: center;
+    width: 240px;
+    height: 350px;
+    padding: 0.625rem;
+    margin: 0.625rem;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 
+                0 3px 1px -2px rgba(0,0,0,.12), 
+                0 1px 5px 0 rgba(0,0,0,.2);
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr .7fr .8fr .8fr;
+    grid-template-areas:
+                  "title"
+                  "img"
+                  "precio"
+                  "botonlink"
+                  "botonlink";
+    border-radius: 2px;
+    }
+  .title { 
+    grid-area: title;
+    font-family: 'Titillium Web';
+    font-size: 1.3rem
+  }
+
+  .img {
+    max-width:11.25rem; 
+    max-height:9.375rem; 
+    width: auto; 
+    height: auto;
+    }
+  .imgGris{
+    filter: grayscale(1);
+    max-width:11.25rem; 
+    max-height:9.375rem; 
+    width: auto; 
+    height: auto;
+  }
+
+  .imagen{
+  grid-area: img; 
+  display: grid;
+  place-items: center;
+  justify-items: center;
+  }
+  .precio { 
+    display: flex;
+    align-items: flex-end;
+    grid-area: precio; 
+    font-size: 22px;
+    font-weight: 300;
+    justify-content: center;
+  }
+  
+  .botonlink{
+    display: grid;
+    align-items: flex-end;
+    grid-area: botonlink; 
+  }
+  .boton { 
+    height: 2.1875rem; 
+    width: 90%;
+    background: linear-gradient(45deg, #1292FF, #716BF9)!important;
+    border: none;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 
+                0 6px 30px 5px rgba(0,0,0,.12), 
+                0 8px 10px -7px rgba(0,0,0,.2);
+                transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .4s;
+      
+  }
+.boton:hover{
+    box-shadow: none;
+    transform: translateY(-1.5px);
+  }
+.boton:active{
+  transform: translateY(2px);
+}
+
+.botoncart{
+  height: 2.1875rem;
+  width: 90%;
+  border : none;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 
+                0 6px 30px 5px rgba(0,0,0,.12), 
+                0 8px 10px -7px rgba(0,0,0,.2);
+                transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .4s;
+}
+.botoncart:hover{
+  box-shadow: none;
+  background-image: linear-gradient( 45deg,  rgba(174,68,223,1) 27.3%, rgba(246,135,135,1) 112.7% );
+  transform: translateY(-1.5px);
+}
+.botoncart:active{
+  transform: translateY(2px);
+}
+
+.textLink{
+  color: #6b6f82;
+  pointer-events: none
+}
+
+.sinstock{
+  font-family: 'Titillium Web';
+    font-size: 25px;
+    grid-area: botonlink;
+    display: grid;
+    align-items: flex-end;
+}
+.heart:hover{
+  color:#4280ff;
+  font-size: 37px;
+  cursor: pointer;
+  bottom: 0.5px;
+}
+.heartdiv{
+  display: flex;
+  justify-content: flex-end;
+}
+.heart{
+  color: #4280ff;
+  font-size: 30px;
+  position: absolute;
+  top: 30px;
+}
+   

@@ -1,0 +1,80 @@
+.link{
+  display: block;
+  height:70px ;
+  margin-top: 20px;
+  font-size: 22px;
+  color: black !important;
+  justify-content:space-between;
+  /* margin-left: 90px; */
+}
+.link:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    justify-content:space-between;
+    background: transparent;
+    transition: width .4s ease, background-color .5s ease;
+  }
+  .link:hover:after {
+    width: 80%;
+    background: linear-gradient(45deg, #377ED1, #03a9f4)!important; 
+  }
+
+  .boton{
+    background: transparent;
+    margin-top: 10px;
+    margin-left: 270px;
+    font-size: 25px;
+    color: black;
+    border:none; 
+  }
+  
+  .boton:hover{
+    background: linear-gradient(45deg, #377ED1, #03a9f4)!important; 
+    border: none;
+  }
+  
+  .sidebar {
+    height: 100vh;
+    padding-left: 0px;
+    background:#ffffff;
+    color: black !important;
+    width: 350px;
+    position: fixed;
+    text-align: center;
+    z-index: 200;
+    left: -100%;
+    animation: slide-open 0.75s forwards;
+    box-shadow: 0 0.125rem 9.375rem rgba(90,97,105,.1), 
+                0 0.25rem 0.5rem rgba(90,97,105,.12), 
+                0 0.9375rem 1.375rem rgba(90,97,105,.1), 
+                0 0.4375rem 2.1875rem rgba(165,182,201,.1);
+}
+
+@keyframes slide-open{
+  100% {left:0}
+}
+
+.tooggle{
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 40px;
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+}
+.tooggle:hover{
+  border: none;
+  background: linear-gradient(45deg, #377ED1, #03a9f4)!important; 
+}
+
+.sidebar.close{
+  left: 0;
+  animation: slide-close 1.0s forwards;
+}
+
+@keyframes slide-close{
+  100% {left: -100%}
+}

@@ -1,0 +1,31 @@
+.checkoutsteps {
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    margin: 3rem auto;
+    font-size: medium;
+  }
+  .checkoutsteps > div {
+    border-top: 0.5rem #c0c0c0 solid;
+    color: #c0c0c0;
+    flex: 1 1;
+    padding-top: 1rem;
+  }
+  .checkoutsteps > div.active {
+    border-top: 0.5rem  #1292FF solid;
+    color:  #0d3f6b;
+  }
+ 
+  .boton {  
+    margin: 15px;
+    font-size: 20px;
+    width: 180px;
+    border: none;
+    pointer-events: auto;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #377ED1, #03a9f4)!important; 
+  }
+  .avatar{
+    background: linear-gradient(45deg, #1292FF, #716BF9)!important; 
+
+  }

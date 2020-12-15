@@ -1,0 +1,85 @@
+.container{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    place-items: center;
+}
+.card {
+    padding: 25px;
+    width: 600px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .7fr .7fr 1fr 1fr 1fr 1fr  ;
+    gap: 0px 0px;
+    grid-template-areas:
+      "imagen titulo"
+      "imagen descrip"
+      "imagen descrip"
+      "imagen descrip"
+      "imagen precio"
+      "imagen botones";
+      box-shadow: 0 12px 20px 2px rgba(0,0,0,.14), 
+      0 3px 20px 5px rgba(0,0,0,.12), 
+      0 4px 5px -3px rgba(0,0,0,.2);
+
+  }
+  
+  .img{
+    max-width:150px; 
+    max-width: height 225px;
+    width: auto; 
+    height: auto;
+    border-radius: 5px;
+    
+  }
+  .imagen { 
+      background-color: #f2f1f2;
+      padding: 10px;
+      margin: 10px;
+      grid-area: imagen; 
+      display: grid;
+      place-items: center;
+    }
+
+  .titulo { 
+      grid-area: titulo; 
+      font-weight: 500;
+      font-size: 25px;
+    }
+  .descrip { grid-area: descrip; }
+
+  .precio { 
+      font-size: 30px;
+      grid-area: precio; 
+    }
+  .botones { 
+      margin: 0;
+      padding: 0;
+      grid-area: botones; 
+      background: none;
+      border: none;
+    }
+
+.boton{
+    height: 35px;
+    margin: 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 
+    0 6px 30px 5px rgba(0,0,0,.12), 
+    0 8px 10px -7px rgba(0,0,0,.2);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .4s;
+    
+}
+    
+.boton:active, .boton:focus, .boton:hover{
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.boton1{
+    background: linear-gradient(45deg, #1292FF, #716BF9)!important;
+}

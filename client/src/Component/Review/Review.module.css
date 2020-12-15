@@ -1,0 +1,48 @@
+.Star{
+    color:#4280ff;
+}
+.emptyStar{
+    color: #b9b9b9;
+}
+
+.Card{
+    
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 
+                0 3px 1px -2px rgba(0,0,0,.12), 
+                0 1px 5px 0 rgba(0,0,0,.2);
+    border: none;
+    margin: 15px;
+    
+}
+.cardRContainer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 
+                0 3px 1px -2px rgba(0,0,0,.12), 
+                0 1px 5px 0 rgba(0,0,0,.2);
+    border: none;
+    padding-left: 20px;
+}
+
+
+.cTitle,.cSubtitle{
+    padding: 10px;
+}
+.rProm{
+    font-size: 80px;
+    margin: 10px;
+    float: left;
+}
+.pProm{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+}
+.pStar{
+    display: flex;
+    flex-direction: column;
+}
+.rStars{
+    font-size: 32px;
+}

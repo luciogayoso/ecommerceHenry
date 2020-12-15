@@ -1,0 +1,140 @@
+.container{
+  width: 100%;
+  height: 80%;
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+}
+
+.heart:hover{
+  color:#4280ff;
+  font-size: 37px;
+  cursor: pointer;
+  bottom: 0.5px;
+}
+.heartdiv{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.heart{
+  color: #4280ff;
+  font-size: 30px;
+  position: absolute;
+  top: 40px;
+}
+
+.botonlink{
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: white;
+  width: 50px;
+  height: 50px;
+  background-color: lightskyblue;
+  position: absolute;
+  top: 30px;
+  left: -25px;
+
+}
+.card {
+  
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .7fr .7fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "imagen titulo"
+    "imagen stock"
+    "imagen descrip"
+    "imagen descrip"
+    "imagen descrip"
+    "imagen precio"
+    "imagen botones"
+    "imagen botones";
+  box-shadow: 
+          0 2px 2px 0 rgba(0,0,0,.14), 
+          0 3px 1px -2px rgba(0,0,0,.12), 
+          0 1px 5px 0 rgba(0,0,0,.2);
+
+}
+.contenedorImg{
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #f2f1f2;
+}
+.img{
+  max-width:300px; 
+  max-width: height 375px;
+  width: auto; 
+  height: auto;
+  border-radius: 5px;
+  
+}
+.imagen { 
+    padding: 20px;
+    grid-area: imagen; 
+    display: grid;
+    place-items: center;
+  }
+
+.titulo { 
+    grid-area: titulo; 
+    font-weight: 500;
+    font-size: 25px;
+  }
+.stock { grid-area: stock; }
+
+.descrip { grid-area: descrip; }
+
+.precio { 
+    font-size: 30px;
+    grid-area: precio; 
+  }
+.botones { 
+    margin: 0;
+    padding: 0;
+    grid-area: botones; 
+    background: none;
+    border: none;
+  }
+.boton{
+  display: block;
+  height: 35px;
+  margin: 5px;
+  display: inline;
+  border: none;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 
+  0 6px 30px 5px rgba(0,0,0,.12), 
+  0 8px 10px -7px rgba(0,0,0,.2);
+  transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .4s;
+  
+}
+  
+.boton:active, .boton:focus, .boton:hover{
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.boton1{
+  background: linear-gradient(45deg, #1292FF, #716BF9)!important;
+}
+.boton2{
+  background-image: linear-gradient( 45deg,  rgba(174,68,223,1) 27.3%, rgba(246,135,135,1) 112.7% );
+}
+.cantidad{
+margin: 5px;
+width: 80px;
+}
+
+.sinstock{
+  font-size: small;
+  color: #ff0949;
+}
