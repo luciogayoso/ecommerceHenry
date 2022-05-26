@@ -8,7 +8,7 @@ import mati from "./images/mati.jpg"
 import leandro from "./images/leandro.jpg"
 import lucio from "./images/lucio.jpg"
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import { Card, CardColumns, Button } from 'react-bootstrap';
+//import { Card, CardColumns, Button } from 'react-bootstrap';
 
 
 let devs = [{name:"Arquel Luciano", stack:"Developer Full Stack Javascript", provincia:"Entre Ríos, Argentina.",link:"",img: luciano, info:""},
@@ -30,11 +30,7 @@ export default function About() {
       </span>
       
 
-      <div style={{display: "grid",
-  gridTemplateColumns: "1fr 1fr 1fr",
-  gridGap: "2em",
-  gridAutoRows: "minmax(100px auto)"}}>
-
+      <div style={{display: "grid",gridTemplateColumns: "1fr 1fr 1fr",gridGap: "2em",gridAutoRows: "minmax(100px auto)"}}>
 
         { devs && devs.map(dev=> 
         

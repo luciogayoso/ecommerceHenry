@@ -14,11 +14,14 @@ import Cookies from 'universal-cookie'
 export default function NavBar (islog){
     const prodUsuario = useSelector(store => store.productsCart).productos
     const cookies=new Cookies();
-    let prodLStorage = JSON.parse(localStorage.getItem("carritoLocal"))
-    let id_user=cookies.get('id')
-    let username=cookies.get('username')
-    let typeUser= cookies.get('typeUser')
+    let prodLStorage = JSON.parse(localStorage.getItem("carritoLocal"));
+    let id_user=cookies.get('id');
+    let username=cookies.get('username');
+    let typeUser= cookies.get('typeUser');
+    //console.log(islog);
     let notProd = prodUsuario.length ? prodUsuario.length : prodLStorage.length
+    
+    
     const limpiarCookies=()=>{
         
         cookies.remove('id',{path: '/'})
@@ -30,6 +33,8 @@ export default function NavBar (islog){
 
     const dispatch=useDispatch();
     const usuario=islog.islog 
+    console.log(islog);
+
 
     document.addEventListener("DOMContentLoaded", function () {
         let mybutton = document.getElementById("myBtn");
@@ -83,7 +88,8 @@ return (
                         : ''
                     }
             </Link>
-                {  typeUser && typeUser==='Admin'
+                {  
+                islog.islog.typeUser && islog.islog.typeUser==='Admin'
                     ? 
                     <Link className={styles.navSec +" "+styles.navBoton} to={'/admin'}>Admin</Link>
                     : <div></div>

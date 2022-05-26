@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
 export default function EditUser(userEd) {
   console.log(userEd.user)
     const [edituser, UpdateUser]=useState(userEd.user)
-    const [Open, setOpen]=useState(false)
+    //const [Open, setOpen]=useState(false)
 //    const storeUser=useSelector(store=>store.users)
     const dispatch = useDispatch();
     const hadlerChange=(e)=>{

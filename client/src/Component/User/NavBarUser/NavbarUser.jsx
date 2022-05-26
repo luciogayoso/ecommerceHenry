@@ -5,12 +5,15 @@ import * as HiIcons from 'react-icons/hi';
 import style from './NavbarUser.module.css'
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
-
+import { useDispatch, useSelector } from 'react-redux';
 
 
 export default function NavBarUser(props) {
-    const [sidebarClass, setSidebarClass]=useState(props.sidebar)
-    const closeHandler=(e)=>{
+    const [sidebarClass, setSidebarClass] = useState(props.sidebar)
+    
+    const usuario = useSelector(store => store.user);
+        
+const closeHandler=(e)=>{
         e.preventDefault()
         setSidebarClass("sidebar close")
         props.close()

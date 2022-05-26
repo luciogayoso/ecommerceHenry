@@ -8,7 +8,7 @@ import {useSelector,useDispatch} from 'react-redux';
 
 export default function Homecategory(){
   const productsl = useSelector(state=>state.products);
-  const dispatch = useDispatch();
+  //const dispatch = useDispatch();
   let products = productsl.products;
   
   const masNuevos =  products.slice().sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
@@ -21,7 +21,7 @@ export default function Homecategory(){
         {
           datosCarrusel.map(datos=>{
             return(
-              <Carousel.Item className="align-items-center justify-content-center" interval={2000}>
+              <Carousel.Item className="align-items-center justify-content-center" interval={2000} key="carrucel">
               <Link to={'/products/'}>
                <img
                  className={style.imgCarrusel}
@@ -46,7 +46,7 @@ export default function Homecategory(){
                 masNuevos.slice(0,4).map(prod=>{
                   return(
                     
-                    <Ultimos productos={prod}/>
+                    <Ultimos productos={prod} key="ultimos" />
                     )
                   })
                 }

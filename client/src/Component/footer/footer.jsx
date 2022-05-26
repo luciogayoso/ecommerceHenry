@@ -4,8 +4,8 @@ import style from './footer.css'
 
 export default function Footer(){
   return (
-    <div class="d-flex flex-column" className={style.footer}>
-  <footer class="footer">
+    <div className={style.footer}>
+  <footer className="footer">
     <div className="row">
         <p className="col-m center"><a href="/">Home</a> |<a href="/about">Devs</a> | <a href="/">Logout</a></p>
     </div>

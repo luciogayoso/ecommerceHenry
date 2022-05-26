@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { isLogged } from '../../actions/user';
 import { Card, Container } from '@material-ui/core';
@@ -63,9 +63,9 @@ export default function UserProfile() {
 
         <Container component="main" maxWidth="lg"   background-color=" #fff">
                 <Card className={style.card}>
-                    <Card classname={style.avatar}>
+                    <Card className={style.avatar}>
                         <br />
-                        <img classname={style.img} src={user1} width="210" />
+                        <img className={style.img} src={user1} width="210" />
                         <br />
                         <h4>{usuario.user.name}</h4>
                         <span>{usuario.user.email}</span>

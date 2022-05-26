@@ -14,10 +14,9 @@ export default function Homecategory(){
         <Carousel.Item interval={1000}>
          <Link to={'/products/'}>
           <img
-            className="d-block w-100"
+            className="d-block w-100 {style.img}"
             src={imagen1}
             alt="First slide"
-            className={style.img}
             />
             </Link>
           <Carousel.Caption>
@@ -28,10 +27,9 @@ export default function Homecategory(){
         <Carousel.Item interval={1000}>
         <Link to={'/products/'}>
           <img
-            className="d-block w-100"
+            className="d-block w-100 {style.img}"
             src={imagen2}
             alt="Third slide"
-            className={style.img}
           />
         </Link>
           <Carousel.Caption>
@@ -42,10 +40,9 @@ export default function Homecategory(){
         <Carousel.Item interval={1000}>
         <Link to={'/products/'}>
           <img
-            className="d-block w-100"
+            className="d-block w-100 {style.img}"
             src={imagen3}
             alt="Third slide"
-            className={style.img}
           />
       </Link>
           <Carousel.Caption>

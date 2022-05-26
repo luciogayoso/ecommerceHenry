@@ -7,10 +7,10 @@ import { TextField, InputLabel, Avatar, MenuItem, Select} from '@material-ui/cor
 import { Visibility, VisibilityOff } from '@material-ui/icons';
 import style from './FormAddUser.module.css';
 import { useDispatch, useSelector} from 'react-redux';
-import { BiArrowBack } from "react-icons/bi";
+//import { BiArrowBack } from "react-icons/bi";
 import Swal from 'sweetalert2';
-import Cookies from 'universal-cookie'
-import { ImGift } from 'react-icons/im';
+//import Cookies from 'universal-cookie'
+//import { ImGift } from 'react-icons/im';
 import { useEffect } from 'react';
 import { listUser, addUser} from '../../actions/users';
 
@@ -55,8 +55,9 @@ export default function FormAddUser() {
    
 
     }
-    const userlog=useSelector(state=>state.user)
-    const usuarioLogueado=userlog.user
+    const userlog=useSelector(state=>state.user);
+    const usuarioLogueado=userlog.user;
+    
     const handlerSubmit=(e)=>{
         e.preventDefault();
         dispach(addUser(user))
